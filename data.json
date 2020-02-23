@@ -1,13 +1,35 @@
 {
-        "row1":["","bigoven.com", "rezept-rechner.de", "edamam.com", "openfoodfacts.org"],
+          "site_names":["","BigOven|#|https://www.bigoven.com",
+            "Rezeptrechner|#|https://www.rezeptrechner-online.de/",
+            "Edamam|#|https://www.edamam.com/",
+            "OpenFoodFacts|#|https://world.openfoodfacts.org/",
+            "FDDB|#|https://fddb.info",
+            "USDA|#|https://fdc.nal.usda.gov/api-guide.html"],
+
         "row2":["Data"],
-        "row3":["Recipes","", "", "", ""],
-        "row4":["Ingredients","", "", "", ""],
+
+        "row3":["Recipes","500K", "", "", "", "", "" ],
+        "row4":["Ingredients","", "", "", "","", ""],
+
         "row5":["Pricing"],
-        "row6":["Monthly subscription","", "", "", ""],
-        "row6":["Vendor"],
-        "row7":["Country of origin","", "", "", ""],
-        "row8":["Incorporation type","", "", "", ""]
+        "row6":["Monthly subscription","", "", "", "", "", ""],
+
+        "row7":["API"],
+        "row7a":["","","","","", "", ""],
+        "row8":["Throttling","", "", "", "","", "3,600 requests per hour per IP address" ],
+
+        "row9":["Site features"],
+        "row9a":["Price model / $ p.a.", "freemium 0/25/36|#|https://www.bigoven.com/pro", "", "", "", "", ""],
+        "row10":["Unique features","Use up leftovers", "", "", "", "", ""],
+
+        "row11":["App features"],
+        "row12":["Platforms","", "", "", "", "", ""],
+
+
+        "row13":["Vendor"],
+        "row13a": ["Company name", "", "", "", "", "", "", ""],
+        "row14":["Country of origin","", "", "", "", "", ""],
+        "row15":["Incorporation type","", "", "", "", "", ""]
 
 
 }

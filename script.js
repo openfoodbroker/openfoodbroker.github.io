@@ -2,8 +2,10 @@
 
 $(window).on('load', function() {
 
+
   var datasource;
-  fetch("./data.json")
+  var COLSPAN_VALUE = 7
+  fetch("./data.json", {cache: "no-store"})
   .then(response => response.json())
   .then(json =>   updateTable("vendor-matrix", json));
 
@@ -11,7 +13,15 @@ function checkmark(){return '<span class="tick">&#10004;</span>'}
 
 function decorate(item){
   if (item =="1") {return checkmark()}
+
+
+  else if (item.includes("|#|")){
+    arr = item.split("|#|")
+    return "<a href=" + arr[1] + ">" + arr[0] + "</a>"
+  }
+
   return item
+
 }
 
 function updateTable(tableId, jsonData){
@@ -22,9 +32,10 @@ function updateTable(tableId, jsonData){
   for (var eachItem in jsonData) {
 
     var dataObj = jsonData[eachItem];
+
     if(dataObj.length==1){
 
-        tableHTML += '<tr><td class="sep" colspan="5">'+ dataObj[0] + "</td></tr>";
+        tableHTML += '<tr><td class="sep" colspan="'+ COLSPAN_VALUE +'">'+ dataObj[0] + "</td></tr>";
     }
     else{
 
