@@ -25,6 +25,10 @@ advanced algorithms.
 * In basic feature context, identify relevant existing resources like free data APIs and open source components
 * Implement and deploy the first generation of reference OpenFoodBroker APIs.
 
+## Community
+
+Join  [Slack](https://join.slack.com/t/openfoodbroker/shared_invite/zt-e01u7eep-D9GR3Ol4AMTrIQD0orT1HQ) (if not renewed, this link will expire on May 24 2020).
+
 ## Resources
 
 * Initial problem statement and domain review: [Eat smarter with Python and Open Data!](https://www.linkedin.com/pulse/eat-smarter-python-open-data-peter-muryshkin/)
