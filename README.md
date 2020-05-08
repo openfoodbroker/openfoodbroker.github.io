@@ -34,3 +34,10 @@ Join  [Slack](https://join.slack.com/t/openfoodbroker/shared_invite/zt-e01u7eep-
 * Initial problem statement and domain review: [Eat smarter with Python and Open Data!](https://www.linkedin.com/pulse/eat-smarter-python-open-data-peter-muryshkin/)
 * [OpenFoodBroker GitHub](https://github.com/openfoodbroker)
 * [Vendor comparison](https://openfoodbroker.github.io/vendorcomparison)
+
+## Other GitHub communities
+While Open Food Broker seeks to find, inventarize and connect relevant single open source projects, there are other coding communities with multiple software repositories worth mentioning in this context.
+
+* [Open Food Network](https://github.com/openfoodfoundation) - supports sustainable agirculture by establishing local supply chains.
+* [Open Culinary](https://github.com/openculinary) - recipe search and meal planning software.
+* [CookPad](https://github.com/cookpad) - a tech company building a community platform for people to share recipe ideas and cooking tips.
