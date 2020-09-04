@@ -32,8 +32,72 @@
   <!-- Heading Row -->
   <div class="row align-items-center my-5 mt-5">
     <div class="col-lg-6">
-      <h1 class="font-weight-light">MacroUI 1</h1>
-      Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+      <h1 class="font-weight-light mb-5">Shopping List</h1>
+
+     
+
+      <div class="ng-autocomplete" style="width: 100%;">
+        <ng-autocomplete 
+          [data]="showdata"
+          [searchKeyword]="keyword"
+          (selected)='selectEvent($event)'
+          (inputChanged)='getServerResponse($event)'
+          (inputCleared)="searchCleared()"
+          [itemTemplate]="itemTemplate"
+          placeHolder="Search Products"
+          minQueryLength="2"
+          [notFoundTemplate]="notFoundTemplate">                                 
+        </ng-autocomplete>
+         
+        <ng-template #itemTemplate let-item>
+        <a [innerHTML]="item.name"></a>
+        </ng-template>
+         
+        <ng-template #notFoundTemplate let-notFound>
+        <div [innerHTML]="notFound"></div>
+        </ng-template>
+        </div>
+      
+      <div class="tablecontainer" *ngIf="showtable">
+        <table id="example" class="table table-striped table-bordered table-sm row-border hover mt-5" datatable [dtOptions]="dtOptions">
+          <thead>
+            <tr>
+            
+              <th>Energie</th>
+              <th>Energie</th>
+              <th>KH</th>
+            </tr>
+          </thead>
+          <tbody>
+          <tr class="table-success">
+                <td>2.4 kcal</td>
+                <td>10.1 kJ</td>
+                <td>0.0g</td>
+            </tr>
+            <tr class="table-info">
+              
+              <td>2.4 kcal</td>
+              <td>10.1 kJ</td>
+              <td>0.0g</td>
+            </tr>
+            <tr class="table-danger">
+            
+              <td>2.4 kcal</td>
+              <td>10.1 kJ</td>
+              <td>0.0g</td>
+            </tr>
+          
+            <tr class="table-success">
+              
+              <td>2.4 kcal</td>
+              <td>10.1 kJ</td>
+              <td>0.0g</td>
+          </tr>
+          
+        
+          </tbody>
+        </table>
+    </div>
     </div>
     <!-- /.col-lg-8 -->
     <div class="col-lg-6">
